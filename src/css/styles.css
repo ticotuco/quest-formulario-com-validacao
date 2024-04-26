@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
+html {
+    font-family: "Roboto", sans-serif;
+    background-image: url('../imagens/bg-repeat.jpg');
+    background-size: contain;
+    font-size: 62.5%;
+
+}
+
+body {
+    height: 100vh;   
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.texto-suporte {
+    width: 40%;
+    color: white;
+}
+
+.texto-suporte h1 {
+    font-size: 2rem;
+    font-weight: 900;
+}
+
+.texto-suporte p {
+    width: 90%;
+    font-size: 1.5rem;
+}
+
+.formulario {
+    width: 45%;
+    max-height: 90%;
+    padding: 2rem;
+    overflow: auto;
+    background-color: #fff;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.formulario div {
+    width: 100%;
+
+    /* o flex aqui foi utilizado para deixar a span colada no input: */
+    display: flex;
+    flex-direction: column;
+}
+
+.campo {
+    width: 100%;
+    margin: 0;
+    padding: 0.8rem 1rem;
+    border: 1px solid black;
+    border-radius: .5rem;
+}
+
+.campo::placeholder {
+    font-family: "Roboto", sans-serif;
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #A8A8A8;
+}
+
+.mensagem {
+    max-width: 100%;
+    height: 10rem;
+    font-family: "Roboto", sans-serif;
+    font-size: 1.5rem;
+}
+
+.invalido {
+    border-color: red;
+}
+
+.valido {
+    border-color: #00C22B;
+}
+
+.span-erro {
+    display: none;
+    font-size: 0.9rem;
+    color: red;
+}
+
+.formulario p {
+    align-self: flex-start;
+    font-size: 1.5rem;
+}
+
+.enviar {
+    width: 100%;
+    padding: 1.5rem;
+    background-color: #3CCC87;
+    color: white;
+    border: none;
+    border-radius: 0.5rem;
+    font-size: 1.5rem;
+    font-weight: 700;
+    transition: .2s;
+    cursor: pointer;
+}
+
+.enviar:hover {
+    background-color: #53e09c;
+}

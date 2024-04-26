@@ -1,0 +1,23 @@
+@media(max-width: 435px) {
+    body {
+        height: auto;
+        gap: 3rem;
+        flex-direction: column-reverse;
+    }
+
+    .texto-suporte {
+        width: 80%;
+        margin: 3rem;
+        text-align: center;
+    }
+
+    .texto-suporte p {
+        width: auto;
+        margin-top: 1rem;
+    }
+
+    .formulario {
+        width: 80%;
+        margin-top: 3rem;
+    }
+}
